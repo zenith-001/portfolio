@@ -33,13 +33,13 @@ section {
 .background .bg-blob-1 {
   top: 0%;
   left: 70%;
-  animation: blob-1-animation 2s linear infinite;
+  animation: blob-1-animation 200s linear infinite;
 }
 
 .background .bg-blob-2 {
   top: 90%;
   left: 30%;
-  animation: blob-2-animation 2s linear infinite;
+  animation: blob-2-animation 200s linear infinite;
 }
 
 @keyframes blob-1-animation {
