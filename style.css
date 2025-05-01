@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid #000000;
+  /* background-color: #363636; */
+}
+
+.background {
+  overflow: hidden;
+  background-color: #141212;
+}
+
+.background .bg-blob {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #ececec;
+  position: absolute;
+  filter: blur(200px);
+  border-radius: 50%;
+}
+
+.background .bg-blob-1 {
+  top: 0%;
+  left: 70%;
+  animation: blob-1-animation 2s linear infinite;
+}
+
+.background .bg-blob-2 {
+  top: 90%;
+  left: 30%;
+  animation: blob-2-animation 2s linear infinite;
+}
+
+@keyframes blob-1-animation {
+  0% {
+    top: 00%;
+    left: 00%;
+    height: 100px;
+    width: 100px;
+  }
+  25% {
+    top: 00%;
+    left: 100%;
+    height: 150px;
+    width: 150px;
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    height: 200px;
+    width: 200px;
+  }
+  75% {
+    top: 100%;
+    left: 00%;
+    height: 150px;
+    width: 150px;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes blob-2-animation {
+  0% {
+    top: 100%;
+    left: 100%;
+    height: 100px;
+    width: 100px;
+  }
+  25% {
+    top: 100%;
+    left: 00%;
+    height: 150px;
+    width: 150px;
+  }
+  50% {
+    top: 00%;
+    left: 00%;
+    height: 200px;
+    width: 200px;
+  }
+  75% {
+    top: 00%;
+    left: 100%;
+    height: 150px;
+    width: 150px;
+  }
+  100% {
+    top: 100%;
+    left: 100%;
+    height: 100px;
+    width: 100px;
+  }
+}
