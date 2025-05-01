@@ -102,6 +102,61 @@ section {
   animation: none;
 }
 
+#hero nav {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#hero .nav-item {
+  font-size: 20px;
+  font-family: "LCD Solid", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+#hero .nav-item:hover {
+  border-bottom: 2px solid #ffffff;
+  transform: scale(1.1);
+  font-weight: 400;
+}
+
+.indicator {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  font-size: 30px;
+  font-family: "LCD Solid", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 12px;
+  animation: move-indicator 2s infinite;
+}
+
+@keyframes move-indicator {
+  0% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  50% {
+    transform: translate(-50%, -70%) rotate(90deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
 
 
 @keyframes pulse {
