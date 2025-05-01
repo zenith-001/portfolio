@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Bugaki';
+    src: url('Bugaki-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bugaki';
+    src: url('Bugaki-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
