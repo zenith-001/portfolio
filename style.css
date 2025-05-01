@@ -48,6 +48,29 @@ section {
   animation: blob-2-animation 200s linear infinite;
 }
 
+#hero .subtitle{
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'LCD Solid', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    /* text-transform: uppercase; */
+}
+#hero .title{
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'LCD Solid', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
 @keyframes blob-1-animation {
   0% {
     top: 00%;
