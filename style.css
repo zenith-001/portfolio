@@ -11,7 +11,7 @@ body {
 section {
   width: 100%;
   height: 100vh;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid red;
   /* background-color: #363636; */
 }
 
@@ -48,29 +48,73 @@ section {
   animation: blob-2-animation 200s linear infinite;
 }
 
-#hero .subtitle{
-    font-size: 30px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'LCD Solid', sans-serif;
-    font-weight: 900;
-    color: #ffffff;
-    /* text-transform: uppercase; */
+#hero .subtitle {
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "LCD Solid", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  /* text-transform: uppercase; */
 }
-#hero .title{
-    font-size: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'LCD Solid', sans-serif;
-    font-weight: 900;
-    color: #ffffff;
-    text-transform: uppercase;
+#hero .title {
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "LCD Solid", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 6px;
+  text-transform: uppercase;
 }
 
+#hero .resume {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  font-family: "LCD Solid", sans-serif;
+  font-weight: 900;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 2px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  animation: pulse 2s infinite;
+  transform-origin: center;
+}
+
+#hero .resume:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translate(-50%, -50%) scale(1.01);
+
+  animation: none;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.01);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
 @keyframes blob-1-animation {
   0% {
     top: 00%;
@@ -103,7 +147,6 @@ section {
     width: 100px;
   }
 }
-
 @keyframes blob-2-animation {
   0% {
     top: 100%;
