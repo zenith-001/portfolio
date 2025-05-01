@@ -6,10 +6,12 @@ document
   });
 
 document
-  .querySelector("#hero .nav-item")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
+  .querySelectorAll("#hero .nav-item")
+  .forEach((item) => {
+    item.addEventListener("click", function (e) {
+      e.preventDefault();
 
     const target = this.getAttribute("data-target");
     document.querySelector(target).scrollIntoView({ behavior: "smooth" });
   });
+});
