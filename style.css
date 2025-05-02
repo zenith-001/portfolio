@@ -11,6 +11,7 @@ body {
 section {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .background {
@@ -157,6 +158,40 @@ section {
   text-transform: uppercase;
   transform: translate(-50%, -50%);
 }
+
+.about-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-text {
+  font-size: 20px;
+  font-family: "LCD Solid", sans-serif;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+  float: right;
+}
+
+.about-text:hover {
+  font-weight: 400;
+} 
+
+.about-image {
+  height: 100px;
+  float: left;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 @keyframes move-indicator {
   0% {
