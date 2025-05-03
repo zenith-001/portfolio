@@ -71,11 +71,19 @@ section {
   text-transform: uppercase;
 }
 
-#hero .resume {
+#hero .buttons {
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
+}
+
+#hero button {
+  /* position: absolute; */
+  /* top: 60%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%) scale(1); */
+  
   font-family: "LCD Solid", sans-serif;
   font-weight: 900;
   border: 2px solid #ffffff;
@@ -93,7 +101,7 @@ section {
   transform-origin: center;
 }
 
-#hero .resume:hover {
+#hero button:hover {
   background-color: #ffffff;
   color: #000000;
   transform: translate(-50%, -50%) scale(1.01);
@@ -163,6 +171,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 90%;
   transform: translate(-50%, -50%);
 }
 
@@ -174,6 +183,7 @@ section {
   letter-spacing: 1.3px;
   color: #ffffff;
   float: right;
+  width: 55%;
 }
 
 .about-text:hover {
@@ -181,8 +191,12 @@ section {
 } 
 
 .about-image {
-  height: 100px;
+  height: 400px;
   float: left;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
 }
 
 .about-image img {
