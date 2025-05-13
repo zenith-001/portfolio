@@ -50,7 +50,7 @@ section {
 #hero .subtitle {
   font-size: 30px;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "LCD Solid", sans-serif;
@@ -61,7 +61,7 @@ section {
 #hero .title {
   font-size: 80px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "LCD Solid", sans-serif;
@@ -73,17 +73,14 @@ section {
 
 #hero .buttons {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #hero button {
-  /* position: absolute; */
-  /* top: 60%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%) scale(1); */
-  
+
   font-family: "LCD Solid", sans-serif;
   font-weight: 900;
   border: 2px solid #ffffff;
@@ -97,14 +94,15 @@ section {
   transition: 0.5s;
   letter-spacing: 2px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  animation: pulse 2s infinite;
+  /* animation: pulse 2s infinite; */
   transform-origin: center;
+  margin: 0 12px 0 12px;
 }
 
 #hero button:hover {
   background-color: #ffffff;
   color: #000000;
-  transform: translate(-50%, -50%) scale(1.01);
+  transform: scale(1.01);
 
   animation: none;
 }
@@ -153,15 +151,17 @@ section {
   animation: move-indicator 2s infinite;
 }
 
-.section-title {
-  font-size: 40px;
+#about .section-title {
+  font-size: 110px;
   font-family: "LCD Solid", sans-serif;
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: 3px;
+  width: 1%;
+  word-break: break-word;
   color: #ffffff;
   position: relative;
-  top: 10%;
-  left: 50%;
+  top: 50%;
+  left: 10%;
   text-align: center;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
@@ -197,6 +197,7 @@ section {
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #ffffff;
+  translate: 170px;
 }
 
 .about-image img {
