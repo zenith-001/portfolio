@@ -206,7 +206,28 @@ section {
   object-fit: cover;
 }
 
+/* Projects Section Title Styling */
+#projects .section-title {
+  font-family: 'Orbitron', Arial Black, Arial, sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+  color: transparent;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  -webkit-text-stroke: 3px #fff;
+  /* Remove text-shadow for a clean outline */
+}
 
+@font-face {
+  font-family: 'Orbitron';
+  src: url('fonts/Orbitron-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-display: swap;
+}
 
 @keyframes move-indicator {
   0% {
