@@ -31,7 +31,7 @@ section {
   margin: 20px auto;
   background-color: #ececec;
   position: absolute;
-  filter: blur(200px);
+  filter: blur(100px);
   border-radius: 50%;
 }
 
